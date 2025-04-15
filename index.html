@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zombie Attack</title>
+    <link rel="Stylesheet" href="style.css" />
+</head>
+
+<body class="bg" id="bg" onkeyup="start(event);">
+    
+    <div class="time" id="time">Your Remaining Time: 50</div>
+    <img src="Run1.png" class="knight" id="knight" />
+    <img src="Walk1.png" class="zombie" id="zombie" />
+
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <img src="skull.svg" alt="Game Over" class="modal-image">
+            <h2>GAME OVER!</h2>
+            <p>Better luck next time!</p>
+            <button onclick="location.reload()" class="reload-btn">Try Again</button>
+        </div>
+    </div>
+
+    <div id="winModal" class="modal">
+        <div class="modal-content">
+            <img src="trophy.png" alt="Winner" class="modal-image">
+            <h2>VICTORY!</h2>
+            <p>You defeated the zombie!</p>
+            <button onclick="location.reload()" class="reload-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
