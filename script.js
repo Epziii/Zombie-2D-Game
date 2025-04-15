@@ -23,7 +23,7 @@ function walk() {
         if (walkImgNum == 11) {
             walkImgNum = 1;
         }
-        document.getElementById("zombie").src = "walk" + walkImgNum + ".png";
+        document.getElementById("zombie").src = "Walk" + walkImgNum + ".png";
     }, 150);
 }
 
@@ -87,7 +87,7 @@ function attack() {
             clearInterval(attackWorkerNum);
             attackWorkerNum = 0;
         }
-        document.getElementById("knight").src = "attack" + attackImgNum + ".png";
+        document.getElementById("knight").src = "Attack" + attackImgNum + ".png";
     }, 100);
     if (attackCount == 5) {
         winSound.play();
