@@ -13,6 +13,7 @@ function start(event) {
     }
 }
 
+window.onload = function () {
 
 var walkImgNum = 1;
 var walkWorkerNum = 0;
@@ -95,6 +96,7 @@ function attack() {
         clearAllIntervals();
     }
     attackCount++
+}
 }
 
 function clearAllIntervals() {
