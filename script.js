@@ -23,7 +23,7 @@ window.onload = function () {
         walkWorkerNum = setInterval(() => {
             walkImgNum++;
             if (walkImgNum == 11) walkImgNum = 1;
-            document.getElementById("zombie").src = "walk" + walkImgNum + ".png";
+            document.getElementById("zombie").src = "Walk" + walkImgNum + ".png";
         }, 150);
     }
 
@@ -55,7 +55,7 @@ window.onload = function () {
                 attack();
                 attackSound.play();
             }
-            document.getElementById("knight").src = "run" + runImgNum + ".png";
+            document.getElementById("knight").src = "Run" + runImgNum + ".png";
         }, 150);
     }
 
@@ -67,7 +67,7 @@ window.onload = function () {
                 clearInterval(attackWorkerNum);
                 attackWorkerNum = 0;
             }
-            document.getElementById("knight").src = "attack" + attackImgNum + ".png";
+            document.getElementById("knight").src = "Attack" + attackImgNum + ".png";
         }, 100);
         if (attackCount == 5) {
             winSound.play();
@@ -111,7 +111,7 @@ window.onload = function () {
         }
     }
 
-    preloadImages("attack", 10);
-    preloadImages("run", 10);
-    preloadImages("walk", 10);
+    preloadImages("Attack", 10);
+    preloadImages("Run", 10);
+    preloadImages("Walk", 10);
 };
